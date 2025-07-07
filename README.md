@@ -6,13 +6,9 @@ A real-time group collaboration platform designed specifically for developers. C
 
 ## System Design
 
-<details>
-<summary><strong>View System Design Diagram</strong> (Click to expand)</summary>
+### System Design Diagram
 
-<!-- Add your architecture image here -->
 ![System Architecture](./public_images/system-design.png)
-
-</details>
 
 **Key Components:**
 - Frontend: React, Monaco Editor, Xterm.js
@@ -25,8 +21,10 @@ A real-time group collaboration platform designed specifically for developers. C
 
 ## Preview (Currently Implemented)
 
-<!-- Add screenshots/gifs here showing what you’ve implemented -->
+### General Group Chat UI
 ![General Group Chat UI](./public_images/codesphere_groupimg.png)
+
+### Code Snippet Collaboration
 ![Code Snippet Collaboration](./public_images/codesphere_codequestionimg.png)
 
 ---
