@@ -1,0 +1,138 @@
+:root {
+    --background-main: #23272f;
+    --background-panel: #2c313a;
+    --background-input: #23272f;
+    --border-color: #353b45;
+    --text-main: #e4e6eb;
+    --text-secondary: #b0b3b8;
+    --accent: #1976d2;
+    --accent-hover: #125ea6;
+  }
+  
+  body {
+    background: var(--background-main);
+    color: var(--text-main);
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 2fr 1fr;
+    gap: 16px;
+    height: 90vh;
+    padding: 16px;
+    background: var(--background-main);
+  }
+  
+  .editor {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+    min-width: 0;
+    min-height: 0;
+    background: var(--background-panel);
+  }
+  
+  .commitHistory {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px;
+    background: var(--background-panel);
+    overflow-y: auto;
+    color: var(--text-main);
+  }
+  
+  .commitList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .commitItem {
+    margin-bottom: 10px;
+    color: var(--text-secondary);
+  }
+
+  .commitMessage{
+    border: 1px solid rgb(137, 136, 136);
+    padding: 10px;
+  }
+  
+  .commitItem strong {
+    color: var(--text-main);
+  }
+  
+  .comments {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px;
+    background: var(--background-panel);
+    overflow-y: auto;
+    color: var(--text-main);
+  }
+  
+  .commentList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .commentItem {
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+  }
+  
+  .commentItem strong {
+    color: var(--text-main);
+  }
+  
+  .commentInput {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 16px;
+    background: var(--background-panel);
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .commentForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .commentTextarea {
+    resize: none;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+    font-size: 1rem;
+    background: var(--background-input);
+    color: var(--text-main);
+  }
+  
+  .commentButton {
+    align-self: flex-end;
+    padding: 6px 18px;
+    border-radius: 4px;
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .commentButton:hover {
+    background: var(--accent-hover);
+  }
+  
