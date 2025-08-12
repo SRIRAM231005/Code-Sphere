@@ -15,7 +15,7 @@ A real-time group collaboration platform designed specifically for developers. C
 - Backend: Node.js, Express, Socket.IO, Node-PTY
 - Database: MongoDB (Cloud)
 - Container Management: Docker (Per-project IDEs)
-- Version Control Engine: Custom Git system built from scratch
+- Version Control Engine: Custom Git system built from scratch [GitCustard](https://github.com/SRIRAM231005/gitcustard)
 
 ---
 
@@ -60,7 +60,7 @@ A simulated version control tool tailored to CodeSphere’s environment:
 - Custom logic to store/read compressed blob, commit, and tree objects
 - Supports parsing real `.git/objects` using Node.js and zlib
 
-> Separate GitHub repo for CLI: [gitcustard](https://github.com/SRIRAM231005/gitcustard)
+> Separate GitHub repo for CLI: [GitCustard](https://github.com/SRIRAM231005/gitcustard)
 
 ---
 
